@@ -14,8 +14,10 @@
             var nav = document.querySelector("nav");
             nav.classList.toggle("sticky", window.scrollY > 0)
         })
-      </script>
-      
+    </script>
+
+
+
     <title>Maria Targetolog</title>
 </head>
 <body>
@@ -25,7 +27,7 @@
               <p class="MT">Maria.Shevel</p>
                 <ul class="menu">
                   <li><a href="#about">Обо мне</a></li>
-                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#uslugi">Услуги</a></li>
                   <li><a href="#">Контакты</a></li>
                 </ul>
            </nav>
@@ -84,13 +86,66 @@
       </div>
      </div>
   </div>
-  <main class="work-w-me">
+  <main class="uslugi" id="uslugi">
      <div class="container">
-        
+        <h2 class="h2-uslugi">Услуги</h2>
+        <table class="table-uslug">
+            <h2 class="wwme">Почему стоит работать со мной ▼</h2>
+            <tr>
+                <th><img src="img/01.svg"></th>
+                <th><img src="img/02.svg"></th>
+                <th><img src="img/03.svg"></th>
+              </tr>
+              <tr>
+                <td class="table-td">Запуск рекламы за <span class="fdays">5 дней</span></td>
+                <td class="table-td">Увеличение продаж <span class="up">↑</span></td>
+                <td class="table-td">Гарантия <span class="garant">✓</span></td>
+              </tr>
+              <tr>
+
+                
+                <div id="hiddenText" class="hidden">
+                 <p><td class="table-td2">После заключения договора всего<br> 
+                     через 5-7 дней сможете получить<br>
+                      первые переходы по рекламе.</td></p>
+                </div>
+                <button id="toggleButton" class="toggleButton">Подробнее</button>
+                
+
+                 <td class="table-td2">Правильная настройка повысит<br> 
+                     вашу узнаваемость и будет двигать<br>
+                      вас вперед, привлекая новых клиентов.</td>
+                 <td class="table-td2">Заключение договора, в котором фиксируем все обязательства,
+                      сроки и фиксированную цену.</td>
+               </tr>
+        </table>
      </div>
   </main>
     
+
   
+ 
+   
+</div>
+  
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const hiddenText = document.getElementById('hiddenText');
+    let isHidden = true;
+
+    toggleButton.addEventListener('click', function() {
+        if (isHidden) {
+            hiddenText.style.display = 'block';
+            toggleButton.textContent = 'Скрыть';
+            isHidden = false;
+        } else {
+            hiddenText.style.display = 'none';
+            toggleButton.textContent = 'Подробнее';
+            isHidden = true;
+        }
+    });
+</script>
  
 </body>
 </html>
