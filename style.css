@@ -368,10 +368,93 @@ button {
   width: 850px;
 }
 
-.work-w-me {
-  padding-bottom: 200px;
+.uslugi{
+  padding-bottom: 300px;
   background-color: rgb(0, 0, 0);
+  scroll-margin-top: -50px;
 }
 
+.h2-uslugi {
+  color: #fff;
+  color: #7e8388;
+  cursor: default;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 130px;
+}
+
+.table-uslug  {
+  color: #fff;
+}
+
+.table-uslug th {
+  padding-right: 300px;
+  padding-top: 30px;
+}
+
+.table-uslug th:last-child {
+  padding-right: 180px;
+}
+
+.table-uslug th:nth-child(2) {
+  padding-right: 310px;
+}
+
+.wwme {
+  color: #fff;
+  color: #7e8388;
+  cursor: default;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 65px;
+}
+
+.fdays {
+  color: rgb(255, 53, 53);
+}
+
+.up {
+  color: rgb(64, 64, 255);
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.garant {
+  color: green;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.table-td {
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+.table-td2 {
+  color: #c5c5c5;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.7px;
+  word-spacing: 2.2px;  
+  line-height: 35.5px;
+  padding-top: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggleButton {
+  color: #c5c5c5;
+  position: relative;
+  top: 380px;
+}
 
 
