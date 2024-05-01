@@ -52,6 +52,7 @@ ul, li {
 	width: 1170px;
 	/*позиционирование по центру*/
 	margin: 0 auto; 
+  cursor: default;
 }
 
 .header {
@@ -135,7 +136,7 @@ ul, li {
   width: 615px;
   height: 600px;
   margin-top: 10px;
-  margin-left: 25px;
+  margin-left: -290px;
   transition: 0.3s;
 }
 
@@ -187,8 +188,8 @@ ul, li {
 .box {
   width: 340px;
   position: relative;
-  left: 160px;
-  top: -3px;
+  left: 850px;
+  top: 550px;
   height: auto;
   float: left;
   transition: .5s linear;
@@ -242,23 +243,23 @@ ul, li {
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
-  }
+}
   
   .box:hover:after {
   border-color: #262626;
   height: 100%;
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .5s;
-  }
+}
   
-button {
+.button {
   color: black;
   text-decoration: none;
   cursor: pointer;
   outline: none;
   border: none;
-   background: transparent;
-  }
+  background: transparent;
+}
 
 
 .about {
@@ -267,7 +268,7 @@ button {
   background-color: #181818;
   padding-bottom: 130px;
   scroll-margin-top: -65px;
-  }
+}
 
 
 .about-me {
@@ -369,13 +370,12 @@ button {
 }
 
 .uslugi{
-  padding-bottom: 300px;
+  padding-bottom: 70px;
   background-color: rgb(0, 0, 0);
-  scroll-margin-top: -50px;
+  scroll-margin-top: -53px;
 }
 
 .h2-uslugi {
-  color: #fff;
   color: #7e8388;
   cursor: default;
   font-size: 17px;
@@ -387,6 +387,8 @@ button {
 
 .table-uslug  {
   color: #fff;
+  border-bottom: 0.2px solid rgb(255, 255, 255);
+  padding-bottom: 49px;
 }
 
 .table-uslug th {
@@ -447,6 +449,103 @@ button {
   padding-top: 15px;
 }
 
+.katalog {
+  padding-bottom: 400px;
+  background-color: rgb(0, 0, 0);
+  scroll-margin-top: 43px;
+}
+
+.h2-katalog {
+  color: #7e8388;
+  cursor: default;
+  font-size: 17px;
+  font-weight: 800;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+}
+
+.ul-katalog {
+  color: #d8d8d8;
+  margin-top: 100px;
+}
+
+.ul-katalog li {
+  padding-bottom: 70px;
+}
+
+.ckbx3 {
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.checkbox__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#665f5f, #212121) padding-box,
+              linear-gradient(145deg,#c489ca, #6ea9c0) border-box;
+  border: 1px solid transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.checkbox__input:checked + .checkbox__label .checkbox__custom {
+  background-image: linear-gradient(145deg,#c489ca, #6ea9c0);
+  transform: rotate(45deg) scale(0.8);
+}
+
+.checkbox__label:hover .checkbox__custom {
+  transform: scale(1.1);
+}
+
+.price {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  margin-top: -10px;
+}
+
+
+
+
+
+
+
+/*
+<button onclick="showMore()" class="more" id="more">Подробнее</button>
+
 .hidden {
   display: none;
 }
@@ -454,7 +553,33 @@ button {
 .toggleButton {
   color: #c5c5c5;
   position: relative;
-  top: 380px;
 }
 
+.more {
+  position: relative;
+  top: 250px;
+  color: #c5c5c5e5;
+  border-bottom: 0.1px solid #c5c5c5;
+  padding: 0;
+  padding-bottom: 1.5px;
+  font-size: smaller;
+}
 
+<script>
+    function showMore() {
+      let more = document.getElementById('more')
+      const additionalText = document.getElementById('additionalText');
+     
+
+      if (additionalText.style.display === 'none') {
+        additionalText.style.display = 'block'
+        more.style.top = '380px'
+        more.textContent = 'Скрыть'
+      } 
+      else {
+        additionalText.style.display = 'none'
+        more.style.top = '250px'
+        more.textContent = 'Подробнее'
+        
+      }
+    } */
