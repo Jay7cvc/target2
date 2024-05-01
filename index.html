@@ -8,16 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 0)
-        })
-    </script>
-
-
-
     <title>Maria Targetolog</title>
 </head>
 <body>
@@ -37,7 +27,7 @@
            <h2 class="h2-3">Думаю о вашем деле, как  о своем! ✰</h2>
             <img src="img/logo (2).jpg" class="logo">
             <img src="https://i.giphy.com/2wh8AaMZ2jtRseDQ3C.webp" class="kot">
-            <button>
+            <a href="#katalog" class="button">
                 <span class="box">
                     Рассчитать стоимость
                 </span>
@@ -105,13 +95,13 @@
 
                 
                 <div id="hiddenText" class="hidden">
-                 <p><td class="table-td2">После заключения договора всего<br> 
+                  <td class="table-td2">
+                    <p id="additionalText" class="hidden">После заключения договора всего<br> 
                      через 5-7 дней сможете получить<br>
-                      первые переходы по рекламе.</td></p>
+                      первые переходы по рекламе. </p>
+                    </td>
+                   
                 </div>
-                <button id="toggleButton" class="toggleButton">Подробнее</button>
-                
-
                  <td class="table-td2">Правильная настройка повысит<br> 
                      вашу узнаваемость и будет двигать<br>
                       вас вперед, привлекая новых клиентов.</td>
@@ -119,34 +109,78 @@
                       сроки и фиксированную цену.</td>
                </tr>
         </table>
+        
      </div>
   </main>
+  <section class="katalog" id="katalog">
+    <div class="container">
+     <h2 class="h2-katalog">Каталог услуг</h2>
+     <ul class="ul-katalog">
+
+      <li>
+        <div class="checkbox">
+          <input id="checkbox" class="checkbox__input" type="checkbox">
+          <label for="checkbox" class="checkbox__label">
+            <span class="checkbox__custom"></span>
+            <h3 class="ckbx3">Консультация на самостоятельный запуск рекламы</h3>
+            <span class="price">От 100$</span>
+          </label>
+        </div>
+        
+      </li>
+      
+
+      <li>
+        <div class="checkbox">
+          <input id="checkbox1" class="checkbox__input" type="checkbox">
+          <label for="checkbox1" class="checkbox__label">
+            <span class="checkbox__custom"></span>
+            <h3 class="ckbx3">Настройка таргетированной рекламы тестовый
+             период 14 дней</h3>
+             <span class="price">От 150$</span>
+          </label>
+        </div>
+      </li>
+
+      <li>
+        <div class="checkbox">
+          <input id="checkbox2" class="checkbox__input" type="checkbox">
+          <label for="checkbox2" class="checkbox__label">
+            <span class="checkbox__custom"></span>
+            <h3 class="ckbx3">Настройка и ведение рекламы 1 месяц</h3>
+            <span class="price">От 250$</span>
+          </label>
+        </div>
+      </li>
+
+      <li>
+        <div class="checkbox">
+          <input id="checkbox3" class="checkbox__input" type="checkbox">
+          <label for="checkbox3" class="checkbox__label">
+            <span class="checkbox__custom"></span>
+            <h3 class="ckbx3">Привлечение специалиста: создание 
+              сайта, покупка домена и<br>
+              установка его на сайт, настройка пикселя, настройка квиза, чат-ботов</h3>
+              <span class="price">От 20-250$</span>
+          </label>
+        </div>
+      </li>
+
+     </ul>
+
+
+     
     
+    </div>
+  </section>
+ 
+
 
   
- 
-   
-</div>
-  
 
-<script>
-    const toggleButton = document.getElementById('toggleButton');
-    const hiddenText = document.getElementById('hiddenText');
-    let isHidden = true;
 
-    toggleButton.addEventListener('click', function() {
-        if (isHidden) {
-            hiddenText.style.display = 'block';
-            toggleButton.textContent = 'Скрыть';
-            isHidden = false;
-        } else {
-            hiddenText.style.display = 'none';
-            toggleButton.textContent = 'Подробнее';
-            isHidden = true;
-        }
-    });
-</script>
- 
+
+  <script src="script.js"></script>
 </body>
 </html>
 
