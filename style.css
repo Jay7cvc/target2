@@ -23,11 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 
-h2 {
-	font-size: 50px;
-	margin-bottom: 58px;
-}
-
 h3 {
 	font-size: 25px;
 	margin-bottom: 28px;
@@ -450,9 +445,9 @@ ul, li {
 }
 
 .katalog {
-  padding-bottom: 400px;
+  padding-bottom: 100px;
   background-color: rgb(0, 0, 0);
-  scroll-margin-top: 43px;
+  scroll-margin-top: 55px;
 }
 
 .h2-katalog {
@@ -464,16 +459,87 @@ ul, li {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 40px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+.podrobnee {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7e8388;
+  border-bottom:#7e8388 1px solid;
+  font-size: 13px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 5px 20px #f3663b8e;
+  transition: 0.3s;
+}
+
+.popup:hover {
+  box-shadow: 0 10px 30px #f3663b8e;
+}
+
+.dop-infa-box :last-child{
+  padding-bottom: 20px;
+}
+
+b {
+  color: #f3663b;
+}
+
+.p-dop-infa {
+  color: #c5c5c5;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;  
+}
+
+.one {
+  color: #f3663b;
+}
+
+.podrobnee:hover {
+  opacity: 0.8;
+}
+
+.close {
+  border: none;
+  background-color: #b95739;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 15px;
+  transition: 0.3s all;
+}
+
+.close:hover {
+  box-shadow: 1px 4px 20px #f3663b8e;
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .ul-katalog {
   color: #d8d8d8;
-  margin-top: 100px;
+  margin-top: 65px;
 }
 
 .ul-katalog li {
-  padding-bottom: 70px;
+  padding-bottom: 45px;
 }
 
 .ckbx3 {
@@ -537,49 +603,59 @@ ul, li {
   margin-top: -10px;
 }
 
-
-
-
-
-
-
-/*
-<button onclick="showMore()" class="more" id="more">Подробнее</button>
-
-.hidden {
-  display: none;
-}
-
-.toggleButton {
-  color: #c5c5c5;
+.dalee {
   position: relative;
+  z-index: 2;
+  color: #000000;
+  font-size: larger;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 50px 10px 50px;
+  border-radius: 25px;
+  background: linear-gradient(145deg,#c489ca, #6ea9c0) border-box;
+  transition: all 0.2s;
 }
 
-.more {
-  position: relative;
-  top: 250px;
-  color: #c5c5c5e5;
-  border-bottom: 0.1px solid #c5c5c5;
-  padding: 0;
-  padding-bottom: 1.5px;
-  font-size: smaller;
+.dalee:hover {
+  opacity: 0.9;
+  box-shadow: 0 8px 35px #c489ca;
 }
 
-<script>
-    function showMore() {
-      let more = document.getElementById('more')
-      const additionalText = document.getElementById('additionalText');
-     
 
-      if (additionalText.style.display === 'none') {
-        additionalText.style.display = 'block'
-        more.style.top = '380px'
-        more.textContent = 'Скрыть'
-      } 
-      else {
-        additionalText.style.display = 'none'
-        more.style.top = '250px'
-        more.textContent = 'Подробнее'
-        
-      }
-    } */
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
