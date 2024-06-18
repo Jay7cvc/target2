@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:wght@100..900&display=swap');
 
@@ -375,35 +374,26 @@ li {
   scroll-margin-top: 70px;
 }
 
-.keys-ul {
+.photo-scroll {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding-top: 28px;
-  margin-left: -110px;
 }
+
 
 .keys-1 {
   width: 310px;
-  height: 385px;
+  height: 465px;
   object-fit: cover;
   border-radius: 35px;
-  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
+  /*box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);*/
+  box-shadow: 0px 15px 20px rgb(255, 255, 255, 0.3);
   transition: all 0.3s;
 }
 
-.keys-3 {
-  width: 310px;
-  height: 385px;
-  object-fit: cover;
-  border-radius: 35px;
-  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3);
-  transition: all 0.3s;
-}
-
-.keys-1:hover,
-.keys-3:hover {
-  box-shadow: 10px 30px 60px rgba(255, 255, 255, 0.3);
+.keys-1:hover{
+  box-shadow: 10px 30px 40px rgba(255, 255, 255, 0.3);
   transform: scale(1.01);
 }
 
@@ -1017,18 +1007,9 @@ b {
     padding-bottom: 85px;
   }
 
-  .keys-ul {
-    margin-left: 0;
-    gap: 1px;
-    padding-left: 0;
-  }
-
   .keys-1 {
-    width: 245px;
-  }
-
-  .keys-3 {
-    width: 245px;
+    width: 205px;
+    height: 284px;
   }
 
   .h2-uslugi {
@@ -1095,9 +1076,183 @@ b {
 }
 }
 
+@media (max-width: 425px) {
+  .MT {
+    font-size: 20px;
+  }
+
+  .kot {
+    width: 29px;
+    right: 135px;
+  }
+
+  .logo {
+    width: 160px;
+    height: 160px;
+    margin-top: 42px;
+    margin-left: 31px;
+  }
+
+  .h2-1 {
+    font-size: 15px;
+    margin-top: 32px;
+    margin-left: 176px
+  }
+
+  .h2-2 {
+    font-size: 15px;
+    margin-top: 87px;
+    margin-left: 177px
+  }
+
+  .h2-3 {
+    font-size: 15px;
+    margin-top: 161px;
+    margin-left: 178px;
+  }
+
+  .box {
+    top: 23px;
+    left: 70px;
+    width: 283px;
+  }
+
+  .about-me {
+    display: flex;
+    width: 92px;
+  }
+
+  .h3-discr1 {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    width: 250px;
+  }
+
+  .discr-photo1 {
+    display: none;
+    width: 199px;
+    position: relative;
+    margin-left: 109px;
+    top: -311px;
+  }
+
+  .discr-1 {
+    display: flex;
+    width: 300px;
+    height: 170px;
+    margin-bottom: 177px;
+  }
+
+  .discr-photo2 {
+    display: none;
+  }
+
+  .h-disrc2 {
+    position: relative;
+    bottom: 388px;
+    right: 454px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    width: 250px;
+  }
+
+  .discr-2 {
+    position: relative;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    word-spacing: 1.3px;
+    line-height: 20px;
+    padding-top: 0;
+    bottom: 414px;
+    right: 454px;
+
+
+    display: flex;
+    width: 300px;
+    height: 180px;
+    margin-bottom: 350px;
+  }
+
+  .target {
+    display: none;
+  }
+
+  .table-uslug tr th img {
+    width: 70px;
+    margin-left: 40px;
+  }
+
+  .table-td2 {
+    line-height: 18px;
+  }
+
+  .ckbx3 {
+    font-size: 15px;
+  }
+
+  .dalee {
+    margin-left: 10px;
+  }
+
+  .popup {
+    width: 300px;
+    height: 400px;
+    left: 220px;
+    overflow-y: scroll;
+  }
+
+  .footer-cont {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .info {
+    padding-right: 0;
+  }
+
+  .konec {
+    display: none;
+  }
+
+  .article1 {
+    padding: 0;
+    width: 0;
+    height: 0;
+  }
+}
+
+.gallery {
+  width: 100%;
+  overflow-x: auto; /* добавляем горизонтальный скролл */
+  white-space: nowrap; /* убираем перенос текста */
+}
+
+/*.photo-scroll {
+  display: inline-flex; /* элементы блочные и располагаются в строку 
+}*/
+
+.photo-scroll img {
+  max-width: 100%; /* ограничиваем ширину изображений */
+  margin-right: 10px; /* отступ между изображениями */
+}
 
 
 
+
+
+/*<div class="carousel">
+<ul class="keys-ul">
+  <li>
+    <a href="https://www.instagram.com/pure_craft.minsk/" target="_blank" class="keys-href">
+      <img src="img/keys.jpg" class="keys-1">
+    </a>
+  </li>
+  <li><img src="img/keys2.jpg" class="keys-1"></li>
+  <li><img src="img/keys3.jpg" class="keys-3"></li>
+</ul>
+</div>
 
 
 
