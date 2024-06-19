@@ -1083,38 +1083,48 @@ b {
 
   .kot {
     width: 29px;
-    right: 135px;
+    right: 175px;
   }
 
   .logo {
-    width: 160px;
-    height: 160px;
-    margin-top: 42px;
-    margin-left: 31px;
+    width: 200px;
+    height: 200px;
+    margin-left: 36px;
   }
 
   .h2-1 {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 32px;
     margin-left: 176px
   }
 
   .h2-2 {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 87px;
     margin-left: 177px
   }
 
   .h2-3 {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 161px;
     margin-left: 178px;
   }
 
+  .about {
+    padding-bottom: 30px;
+    padding-top: 23px;
+  }
+
   .box {
-    top: 23px;
-    left: 70px;
-    width: 283px;
+    top: 26px;
+    left: 95px;
+    width: 222px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: small;
   }
 
   .about-me {
@@ -1184,8 +1194,19 @@ b {
     margin-left: 40px;
   }
 
+  .table-td {
+    font-size: 17px;
+  }
+
   .table-td2 {
-    line-height: 18px;
+    line-height: 15px;
+    margin-top: 10px;
+    font-size: small;
+    padding-right: 6%;
+  }
+
+  .table-td2:last-child {
+    padding-right: 0;
   }
 
   .ckbx3 {
@@ -1193,7 +1214,14 @@ b {
   }
 
   .dalee {
+    position: relative;
     margin-left: 10px;
+    bottom: 10px;
+  }
+
+  .kot-chill {
+    position: absolute;
+    margin-top: 2602px;
   }
 
   .popup {
@@ -1206,6 +1234,10 @@ b {
   .footer-cont {
     display: block;
     margin-bottom: 30px;
+  }
+
+  .footer-content {
+    margin-top: 30px;
   }
 
   .info {
