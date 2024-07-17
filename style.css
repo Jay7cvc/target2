@@ -112,17 +112,32 @@ li {
   letter-spacing: 0.1em;
   color: #fff;
   transition: 0.6s;
+  text-shadow: 0px 3px 4px #a47d33;
 }
 
 .menu li a:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #a47d33;
 }
 
 .menu :last-child {
   margin-right: 0;
 }
 
-.MT {
+.favicon {
+  width: 80px;
+  height: 60px;
+  right: 20px;
+  opacity: 0.9;
+  position: relative;
+  transition: 0.6s;
+  box-shadow: 0 5px 25px #a47d33;
+}
+
+.favicon:hover {
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.3);
+}
+
+/*.MT {
   position: relative;
   transition: 0.6s;
 
@@ -130,7 +145,7 @@ li {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
-}
+}*/
 
 .logo {
   width: 615px;
@@ -202,7 +217,7 @@ li {
   background: transparent;
   text-transform: uppercase;
   font-weight: 900;
-  box-shadow: 0 0 2px 0px #fff;
+  box-shadow: 0 0 2px 0px rgb(255, 255, 255);
   transition: 0.5s;
   color: #fff;
   letter-spacing: 1.5px;
@@ -235,7 +250,7 @@ li {
 }
 
 .box:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px #a47d33;
 }
 
 .box:hover:before {
@@ -310,7 +325,7 @@ li {
 }
 
 .info {
-  box-shadow: 1px 1px 10px 1px #ffffff;
+  box-shadow: 1px 1px 30px 1px #8f8062;
   padding: 60px 400px 70px 100px;
 }
 
@@ -392,7 +407,7 @@ li {
   transition: all 0.3s;
 }
 
-.keys-1:hover{
+.keys-1:hover {
   box-shadow: 10px 30px 40px rgba(255, 255, 255, 0.3);
   transform: scale(1.01);
 }
@@ -478,7 +493,7 @@ li {
 }
 
 .table-td2 {
-  color: #c5c5c5;
+  color: #8f8062;/*c5c5c5*/
   font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.7px;
@@ -510,7 +525,7 @@ li {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   color: #7e8388;
-  border-bottom: #7e8388 1px solid;
+  border-bottom: rgb(173 137 67) 1px solid;
   font-size: 13px;
 }
 
@@ -527,12 +542,12 @@ li {
   background-color: #3a3a3a;
   border-radius: 5px;
   z-index: 1000;
-  box-shadow: 0 5px 20px #f3663b8e;
+  box-shadow: 0 5px 20px rgb(173 137 67);
   transition: 0.3s;
 }
 
 .popup:hover {
-  box-shadow: 0 10px 30px #f3663b8e;
+  box-shadow: 0 10px 30px #8f8062;
 }
 
 .dop-infa-box :last-child {
@@ -540,7 +555,7 @@ li {
 }
 
 b {
-  color: #f3663b;
+  color: rgb(173 137 67);
 }
 
 .p-dop-infa {
@@ -552,7 +567,7 @@ b {
 }
 
 .one {
-  color: #f3663b;
+  color: rgb(173 137 67);
 }
 
 .podrobnee:hover {
@@ -561,7 +576,7 @@ b {
 
 .close {
   border: none;
-  background-color: #b95739;
+  background-color: rgb(173 137 67);
   border-radius: 20px;
   padding-left: 15px;
   padding-top: 7px;
@@ -571,7 +586,7 @@ b {
 }
 
 .close:hover {
-  box-shadow: 1px 4px 20px #f3663b8e;
+  box-shadow: 1px 4px 20px #8f8062;
   -webkit-transform: scale(1.02);
   transform: scale(1.02);
 }
@@ -647,6 +662,7 @@ b {
   letter-spacing: 1px;
   padding-left: 10px;
   margin-top: -10px;
+  color: #917a4e;
 }
 
 .kot-chill {
@@ -724,6 +740,7 @@ b {
 .footer-href:hover {
   opacity: 0.8;
   border-bottom: 0.5px solid #aaa8a8;
+  text-shadow: 0px 4px 10px #a47d33;
 }
 
 .konec {
@@ -970,7 +987,7 @@ b {
   .h-disrc2 {
     position: relative;
     bottom: 100px;
-    right: 121px ;
+    right: 121px;
     font-size: 17px;
   }
 
@@ -1028,7 +1045,8 @@ b {
   }
 
   .table-uslug .wwme {
-    order: -1; /* Переносим заголовок наверх */
+    order: -1;
+    /* Переносим заголовок наверх */
   }
 
   .table-uslug tr {
@@ -1058,25 +1076,35 @@ b {
 
   .table-uslug th:last-child {
     padding-right: 67px;
-}
+  }
 
-.table-td2 {
-  line-height: 20px;
-}
+  .table-td2 {
+    line-height: 20px;
+  }
 
-.footer-cont {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
+  .footer-cont {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
-.konec {
-  margin-left: 326px;
-}
+  .konec {
+    margin-left: 326px;
+  }
 }
 
 @media (max-width: 425px) {
+
+  /*.burger {
+    display: block;
+  }
+
+  .menu {
+    display: block;
+  }*/
+
+
   .MT {
     font-size: 20px;
   }
@@ -1220,8 +1248,9 @@ b {
   }
 
   .kot-chill {
-    position: absolute;
-    margin-top: 2602px;
+    /*position: absolute;
+    margin-top: 2602px;*/
+    margin-left: 15px;
   }
 
   .popup {
@@ -1255,10 +1284,38 @@ b {
   }
 }
 
+@media (max-width: 375px) {
+  .kot-chill {
+    /*margin-top: 2690px;*/
+    margin-left: 10px;
+  }
+
+  .table-uslug th:last-child {
+    padding-right: 0px;
+
+  }
+
+  .table-uslug tr th img {
+    width: 70px;
+    margin-left: -10px;
+  }
+
+  .discr-1 {
+    width: 245px;
+  }
+
+  .box {
+    top: 26px;
+    left: 76px;
+  }
+}
+
 .gallery {
   width: 100%;
-  overflow-x: auto; /* добавляем горизонтальный скролл */
-  white-space: nowrap; /* убираем перенос текста */
+  overflow-x: auto;
+  /* добавляем горизонтальный скролл */
+  white-space: nowrap;
+  /* убираем перенос текста */
 }
 
 /*.photo-scroll {
@@ -1266,13 +1323,17 @@ b {
 }*/
 
 .photo-scroll img {
-  max-width: 100%; /* ограничиваем ширину изображений */
-  margin-right: 10px; /* отступ между изображениями */
+  max-width: 100%;
+  /* ограничиваем ширину изображений */
+  margin-right: 10px;
+  /* отступ между изображениями */
 }
 
 
 
-
+/*<div class="burger" onclick="toggleMenu()">
+          &#9776;
+        </div>
 
 /*<div class="carousel">
 <ul class="keys-ul">
